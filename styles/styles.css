@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Reset default browser styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+:root {
+  --white: #ffffff; /* White */
+  --black-transparent: #00000033; /* Black with transparency */
+  --light-blue: #95aad0; /* Light Blue */
+  --light-gray: #f3f4f6; /* Light Gray */
+  --medium-gray: #d2d5da; /* Medium Gray */
+  --dark-gray: #1d1d1f; /* Dark Gray */
+  --slate-gray: #6c727f; /* Slate Gray */
+}
+
+/* Global styles */
+body {
+  font-family: "Inter", sans-serif; /* Change to your preferred font */
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--white); /* Light grey background */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 2rem;
+
+  background-image: url(/images/background-image.png);
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.checkout-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+header .item-count {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 0.3rem 1.2rem;
+  border-radius: 2rem;
+}
+
+/* Main content styles */
+.content-container {
+  background-color: var(--white);
+  max-width: 80rem;
+  /* margin: -5rem 3rem; */
+
+  display: flex;
+  z-index: 1;
+}
+
+.content-container section {
+  width: 50%;
+}
+
+.product-details {
+  background-color: var(--slate-gray);
+}
+
+/* Footer styles */
+/* footer {
+  text-align: center;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} */
+
+/* Links */
+a {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+/* @media (max-width: 600px) {
+  body {
+      font-size: 14px; Adjust font size for smaller devices
+  }
+
+  header {
+      padding: 15px;
+  }
+
+  main {
+      padding: 15px;
+  }
+
+  footer {
+      padding: 15px;
+  }
+} */
