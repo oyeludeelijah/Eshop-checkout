@@ -43,7 +43,6 @@ body {
   grid-template-columns: 1fr 1fr;
   margin: 0 5rem;
   margin-top: -5rem;
-  border-radius: 5rem;
 }
 
 .checkout-details {
@@ -65,6 +64,8 @@ body {
   background-color: var(--pale-silver);
   /* width: 50rem; */
   padding: 2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .items {
@@ -197,6 +198,14 @@ hr {
 
 .form-details {
   background-color: var(--pure-white);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  padding: 2rem;
+}
+
+.form-details h2 {
+  margin-bottom: 2rem;
 }
 
 .hidden {
