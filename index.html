@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Checkout Page</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <!-- Page Header -->
     <header class="page-header">
       <div class="checkout-details">
         <h1>Checkout</h1>
@@ -14,96 +15,159 @@
       </div>
     </header>
 
+    <!-- Main Content -->
     <main class="content-container">
+      <!-- Cart Section -->
       <section class="product-details">
+        <!-- Cart Items -->
         <div class="items">
-          <!-- Item 1 -->
-          <div class="item item-1">
-            <div class="item-image">
-              <img src="images/Gold.png" alt="" />
-            </div>
-
+          <!-- Cart Item 1 -->
+          <article class="item item-1">
+            <figure class="item-image">
+              <img src="images/Gold.png" alt="iPhone 12 Pro in Gold" />
+            </figure>
             <div class="item-details">
               <div class="item-name">
                 <div class="name">
-                  iPhone 12 Pro <br />
+                  iPhone 12 Pro
                   <span class="item-color">Golden</span>
                 </div>
                 <div class="price">$999.00</div>
               </div>
-
               <div class="item-quantity">
                 <div class="quantity">x 1</div>
-                <div class="close-btn">X</div>
+                <button
+                  type="button"
+                  class="close-btn"
+                  aria-label="Remove item"
+                >
+                  X
+                </button>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Item 2 -->
-          <div class="item item-2">
-            <div class="item-image">
-              <img src="images/Blue.png" alt="" />
-            </div>
-
+          <!-- Cart Item 2 -->
+          <article class="item item-2">
+            <figure class="item-image">
+              <img src="images/Blue.png" alt="Apple Watch in Blue" />
+            </figure>
             <div class="item-details">
               <div class="item-name">
                 <div class="name">
-                  Apple Watch <br />
+                  Apple Watch
                   <span class="item-color">Blue</span>
                 </div>
                 <div class="price">$399.00</div>
               </div>
-
               <div class="item-quantity">
                 <div class="quantity">x 1</div>
-                <div class="close-btn">X</div>
+                <button
+                  type="button"
+                  class="close-btn"
+                  aria-label="Remove item"
+                >
+                  X
+                </button>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Item 3 -->
-          <div class="item item-3">
-            <div class="item-image">
-              <img src="images/iMac=Front-1@2x.png" alt="" />
-            </div>
-
+          <!-- Cart Item 3 -->
+          <article class="item item-3">
+            <figure class="item-image">
+              <img src="images/iMac=Front-1@2x.png" alt="iMac in Green" />
+            </figure>
             <div class="item-details">
               <div class="item-name">
                 <div class="name">
-                  iMac <br />
+                  iMac
                   <span class="item-color">Green</span>
                 </div>
                 <div class="price">$1199.00</div>
               </div>
-
               <div class="item-quantity">
                 <div class="quantity">x 1</div>
-                <div class="close-btn">X</div>
+                <button
+                  type="button"
+                  class="close-btn"
+                  aria-label="Remove item"
+                >
+                  X
+                </button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
-        <hr />
 
-        <form action="" class="coupon-form">
-          <input placeholder="Enter coupon code" type="text" />
-          <button title="Apply Coupon" class="coupon-btn" type="submit">
-            Apply Coupon
-          </button>
+        <hr aria-hidden="true" />
+
+        <!-- Coupon Form -->
+        <form class="coupon-form">
+          <input
+            type="text"
+            placeholder="Enter coupon code"
+            aria-label="Coupon code"
+          />
+          <button type="submit" class="coupon-btn">Apply Coupon</button>
         </form>
 
+        <!-- Order Summary -->
         <div class="total">
-          <div class="sub_total-amount">Sub total <span>$2597.00</span></div>
-          <div class="tax-amount">Tax <span>$623.28</span></div>
-          <div class="total-amount">Total <span>$3220.28</span></div>
+          <div class="sub_total-amount">
+            <span>Sub total</span>
+            <span>$2597.00</span>
+          </div>
+          <div class="tax-amount">
+            <span>Tax</span>
+            <span>$623.28</span>
+          </div>
+          <div class="total-amount">
+            <span>Total</span>
+            <span>$3220.28</span>
+          </div>
         </div>
       </section>
+
+      <!-- Contact Form Section -->
       <section class="form-details">
         <h2>Contact Information</h2>
+        <form>
+          <div class="form-group">
+            <label for="fullname">First & Last name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="First & Last name"
+              required
+            />
+          </div>
 
-        <form action="">
-          <label for="name">First & Last name</label>
-          <input type="text" placeholder="First & Last name" />
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email address"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <div class="form-group col">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="FI">Finland</option>
+              </select>
+            </div>
+
+            <div class="form-group col">
+              <label for="postal">Postal Code</label>
+              <input type="text" id="postal" placeholder="00270" required />
+            </div>
+          </div>
+
+          <button type="submit">Continue</button>
         </form>
       </section>
     </main>

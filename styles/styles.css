@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* CSS Reset */
+/* ---------- CSS Reset ---------- */
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid lime; */
   font-family: "Inter", sans-serif;
 }
 
-/* Root variables for easy theme customization */
+/* ---------- Variables ---------- */
 :root {
   --steel-gray: #6c727f;
   --charcoal-black: #1d1d1f;
@@ -22,7 +21,7 @@
   --powder-blue: #95aad0;
 }
 
-/* Base styles */
+/* ---------- Base Styles ---------- */
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -30,19 +29,12 @@ html {
 
 body {
   background-color: var(--cloud-white);
-  background-color: ;
 }
 
+/* ---------- Header Styles ---------- */
 .page-header {
   background-image: url(/images/background-image.png);
   color: var(--cloud-white);
-}
-
-.content-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 5rem;
-  margin-top: -5rem;
 }
 
 .checkout-details {
@@ -60,14 +52,23 @@ body {
   border-radius: 1rem;
 }
 
+/* ---------- Layout ---------- */
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5rem;
+  margin-top: -5rem;
+}
+
+/* ---------- Product Section ---------- */
 .product-details {
   background-color: var(--pale-silver);
-  /* width: 50rem; */
   padding: 2rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 
+/* Item Cards */
 .items {
   display: flex;
   flex-direction: column;
@@ -82,7 +83,6 @@ body {
 
 .item-details {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -108,13 +108,12 @@ body {
   color: var(--steel-gray);
 }
 
+/* Item Images */
 .item-image {
   width: 10rem;
   height: 8.5rem;
-
   background-color: var(--pure-white);
   border: 1px solid var(--soft-black);
-  /* padding: 0.5rem 2.3rem; */
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -134,10 +133,19 @@ body {
   transform: scale(2);
 }
 
+/* Close button */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Divider */
 hr {
   margin-bottom: 2rem;
 }
 
+/* ---------- Coupon Section ---------- */
 .coupon-form {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -147,7 +155,7 @@ hr {
 
 .coupon-form input {
   border: 1px solid var(--soft-black);
-  padding: 1.2rem 1.2rem;
+  padding: 1.2rem;
   border-radius: 0.5rem;
 }
 
@@ -172,35 +180,32 @@ hr {
   transform: scale(0.95);
 }
 
+/* ---------- Total Section ---------- */
 .total {
   font-size: 1.3rem;
   font-weight: 600;
-
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-.sub_total-amount {
-  display: flex;
-  justify-content: space-between;
-  color: var(--steel-gray);
-}
+.sub_total-amount,
 .tax-amount {
   display: flex;
   justify-content: space-between;
   color: var(--steel-gray);
 }
+
 .total-amount {
   display: flex;
   justify-content: space-between;
 }
 
+/* ---------- Form Section ---------- */
 .form-details {
   background-color: var(--pure-white);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
   padding: 2rem;
 }
 
@@ -208,10 +213,56 @@ hr {
   margin-bottom: 2rem;
 }
 
+/* Form Controls */
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+select {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--charcoal-black);
+  background-color: var(--pale-silver);
+}
+
+.form-group input:focus,
+select:focus {
+  outline: none;
+}
+
+/* Form Layout */
+.row {
+  display: flex;
+  gap: 2rem;
+}
+
+.col {
+  flex: 1;
+}
+
+/* Form Button */
+.form-details button {
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--pure-white);
+  background-color: var(--charcoal-black);
+  border-radius: 0.7rem;
+  border: none;
+}
+
+/* Utilities */
 .hidden {
   display: none;
 }
 
-/* Responsive adjustments */
+/* ---------- Responsive Design ---------- */
 @media (max-width: 768px) {
+  /* Add mobile styles here */
 }
