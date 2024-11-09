@@ -46,10 +46,15 @@ body {
   height: 20rem;
 }
 
+.checkout-details h1 {
+  font-size: 3rem;
+}
+
 .item-count {
   background: var(--powder-blue);
-  padding: 0.5rem 1.2rem;
-  border-radius: 1rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* ---------- Layout ---------- */
