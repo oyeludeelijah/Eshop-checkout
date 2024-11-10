@@ -313,5 +313,20 @@ select:focus {
 }
 
 /* ---------- Responsive Design ---------- */
-@media (max-width: 430px) {
+@media (max-width: 640px) {
+  .content-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+
+  .product-details {
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form-details {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.5rem;
+  }
 }
