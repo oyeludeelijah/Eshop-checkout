@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  /* outline: 1px solid lime; */
 }
 
 /* ---------- Variables ---------- */
@@ -48,19 +49,23 @@ select {
 .page-header {
   background-image: url(/images/background-image.png);
   color: var(--cloud-white);
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .checkout-details {
   padding-top: 3rem;
+
   display: flex;
-  align-items: start;
-  justify-content: center;
+  align-items: center;
   gap: 2rem;
-  height: 20rem;
 }
 
 .checkout-details h1 {
   font-size: 3rem;
+  display: inline-block;
 }
 
 .item-count {
@@ -207,7 +212,8 @@ hr {
 }
 
 .coupon-form button:hover {
-  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.559);
+  /* transform: scale(1.05); */
 }
 
 .coupon-form button:active {
@@ -292,10 +298,12 @@ select:focus {
   border-radius: 0.7rem;
   border: none;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .form-details button:hover {
-  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.559);
+  /* transform: scale(1.05); */
 }
 
 .form-details button:active {
