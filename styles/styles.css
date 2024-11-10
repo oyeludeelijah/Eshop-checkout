@@ -37,9 +37,6 @@ select option {
   font-size: 1.6rem;
 }
 
-select option {
-}
-
 input,
 select {
   padding: 1.8rem 1.2rem;
@@ -316,6 +313,5 @@ select:focus {
 }
 
 /* ---------- Responsive Design ---------- */
-@media (max-width: 768px) {
-  /* Add mobile styles here */
+@media (max-width: 430px) {
 }
