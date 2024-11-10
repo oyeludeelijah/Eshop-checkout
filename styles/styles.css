@@ -36,6 +36,14 @@ select option {
   font-size: 1.6rem;
 }
 
+select option {
+}
+
+input,
+select {
+  padding: 1.8rem 1.2rem;
+}
+
 /* ---------- Header Styles ---------- */
 .page-header {
   background-image: url(/images/background-image.png);
@@ -167,6 +175,7 @@ select option {
 
 /* Divider */
 hr {
+  border: 1px solid #c6c8cb96;
   margin-bottom: 2rem;
 }
 
@@ -180,7 +189,6 @@ hr {
 
 .coupon-form input {
   border: 1px solid var(--soft-black);
-  padding: 1.2rem;
   border-radius: 0.5rem;
 }
 
@@ -236,23 +244,17 @@ hr {
 }
 
 .form-details h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 /* Form Controls */
 .form-group {
-  margin-bottom: 2rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .form-group input,
 select {
   width: 100%;
-  padding: 1.5rem;
   border-radius: 0.7rem;
   border: 1px solid var(--charcoal-black);
   background-color: var(--pale-silver);
@@ -266,8 +268,9 @@ select:focus {
 .form-group label {
   font-size: 1.4rem;
   font-weight: 600;
-
   color: var(--steel-gray);
+  display: block;
+  margin-bottom: 1.5rem;
 }
 /* Form Layout */
 .row {
@@ -281,12 +284,22 @@ select:focus {
 
 /* Form Button */
 .form-details button {
+  font-size: 2rem;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.7rem;
   color: var(--pure-white);
   background-color: var(--charcoal-black);
   border-radius: 0.7rem;
   border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.form-details button:hover {
+  transform: scale(1.05);
+}
+
+.form-details button:active {
+  transform: scale(0.95);
 }
 
 /* Utilities */
